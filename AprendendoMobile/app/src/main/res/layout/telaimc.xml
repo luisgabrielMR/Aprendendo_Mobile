@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMC"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginHorizontal="15sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/Soft_blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indice de massa corporal (IMC)"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uma medida de gordura corporal em adultos"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peso"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:id="@+id/peso"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kg"
+                android:layout_marginHorizontal="12sp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Altura"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:id="@+id/altura"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m"
+                android:layout_marginHorizontal="12sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALCULAR"
+            android:background="@color/Soft_blue"
+            android:textSize="20sp"
+            android:id="@+id/calcular"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20sp">
+
+            <EditText
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:hint="Peso ideal"
+                android:layout_marginHorizontal="20sp"
+                android:id="@+id/peso_ideal"
+                android:editable="false"/>
+
+            <EditText
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:hint="IMC"
+                android:layout_marginHorizontal="20sp"
+                android:id="@+id/imc"
+                android:editable="false"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Interpretação"
+            android:layout_marginHorizontal="20sp"
+            android:id="@+id/interpretacao"
+            android:editable="false"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpar"
+            android:background="@color/Soft_blue"
+            android:layout_marginHorizontal="10sp"
+            android:textSize="20sp"
+            android:id="@+id/limpar"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30sp"
+        android:background="@color/Soft_blue"
+        android:text="Saiba mais"
+        android:layout_marginTop="20sp"
+        android:textSize="20sp"
+        android:id="@+id/saiba_mais"/>
+
+</LinearLayout>
